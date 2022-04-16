@@ -1,0 +1,121 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  background: #0D192C;
+  color: white;
+  font-family: "Outfit", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+svg {
+  padding-right: 0.4rem;
+}
+
+.card {
+  background: #15263F;
+  border-radius: 1rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+  position: relative;
+  width: 21.875rem;
+}
+.card::before {
+  background-color: #00FFF8;
+  border-radius: 1rem;
+  content: "";
+  height: 53%;
+  position: absolute;
+  text-align: center;
+  width: 88%;
+}
+.card::after {
+  border-radius: 1rem;
+  content: url(../images/icon-view.svg);
+  height: 53%;
+  left: 44%;
+  position: absolute;
+  top: 26%;
+  width: 88%;
+}
+.card__author {
+  align-items: center;
+  color: #8BACD9;
+  display: flex;
+  padding-top: 1rem;
+}
+.card__author img {
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 2rem;
+}
+.card__author p {
+  padding-left: 1rem;
+}
+.card__author p span {
+  color: white;
+}
+.card__author p span:hover {
+  color: #00FFF8;
+}
+.card__details {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1.5rem;
+}
+.card__image {
+  border-radius: 1rem;
+  opacity: 1;
+  position: relative;
+  transition: opacity 0.8s;
+  z-index: 4;
+}
+.card__image:hover {
+  opacity: 0.3;
+}
+.card__price {
+  align-items: center;
+  color: #00FFF8;
+  display: flex;
+}
+.card__separator {
+  background-color: #2E405A;
+}
+.card__text {
+  color: #8BACD9;
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 2rem;
+  padding-bottom: 1.5rem;
+}
+.card__time-left {
+  align-items: center;
+  display: flex;
+}
+.card__title {
+  font-size: 1.6rem;
+  padding: 1rem 0 1.5rem 0;
+}
+.card__title:hover {
+  color: #00FFF8;
+}
+
+.attribution {
+  padding-top: 1rem;
+  font-size: 0.7rem;
+  text-align: center;
+}
+.attribution a {
+  color: #3e52a3;
+}
+
+/*# sourceMappingURL=main.css.map */
