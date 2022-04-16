@@ -6,6 +6,11 @@
   box-sizing: inherit;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
 body {
   background: #0D192C;
   color: white;
@@ -13,6 +18,7 @@ body {
 }
 
 img {
+  display: block;
   max-width: 100%;
   height: auto;
 }
@@ -27,25 +33,30 @@ svg {
   margin: 0 auto;
   padding: 1.5rem;
   position: relative;
-  width: 21.875rem;
+  width: 20rem;
 }
-.card::before {
-  background-color: #00FFF8;
-  border-radius: 1rem;
+@media screen and (min-width: 500px) {
+  .card {
+    width: 21.875rem;
+  }
+}
+.card__link {
+  display: block;
+  position: relative;
+}
+.card__link::before {
   content: "";
-  height: 53%;
-  position: absolute;
-  text-align: center;
-  width: 88%;
-}
-.card::after {
+  background: teal;
   border-radius: 1rem;
-  content: url(../images/icon-view.svg);
-  height: 53%;
-  left: 44%;
+  height: 100%;
   position: absolute;
-  top: 26%;
-  width: 88%;
+  width: 100%;
+}
+.card__link::after {
+  content: url("../images/icon-view.svg");
+  position: absolute;
+  top: 45%;
+  left: 43%;
 }
 .card__author {
   align-items: center;
@@ -74,9 +85,10 @@ svg {
 }
 .card__image {
   border-radius: 1rem;
+  display: block;
   opacity: 1;
   position: relative;
-  transition: opacity 0.8s;
+  transition: opacity 1s;
   z-index: 4;
 }
 .card__image:hover {
