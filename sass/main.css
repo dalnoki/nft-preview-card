@@ -6,11 +6,6 @@
   box-sizing: inherit;
 }
 
-a {
-  color: white;
-  text-decoration: none;
-}
-
 body {
   background: #0D192C;
   color: white;
@@ -25,6 +20,11 @@ img {
 
 svg {
   padding-right: 0.4rem;
+}
+
+.anchor {
+  color: white;
+  text-decoration: none;
 }
 
 .card {
@@ -100,7 +100,7 @@ svg {
   display: flex;
 }
 .card__separator {
-  background-color: #2E405A;
+  border: 1px solid #2E405A;
 }
 .card__text {
   color: #8BACD9;
