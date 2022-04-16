@@ -1,0 +1,20 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+
+}
+
+.attribution {
+  padding-top: 1rem;
+  font-size: .7rem; text-align: center;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
